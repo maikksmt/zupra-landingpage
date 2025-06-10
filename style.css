@@ -1,0 +1,86 @@
+/* Reset & Grunddesign */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #fff;
+  color: #111;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  margin: 0.5em 0;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+}
+
+header.hero {
+  background: #f8f8f8;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+}
+
+.cta-form {
+  margin-top: 1.5rem;
+}
+
+.cta-form input {
+  padding: 0.8rem;
+  width: 60%;
+  max-width: 300px;
+  margin-right: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+.cta-form button {
+  padding: 0.8rem 1.2rem;
+  background-color: #ff9e3d; /* Akzentfarbe */
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+section {
+  padding: 3rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.features .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.how-it-works ol {
+  padding-left: 1.2rem;
+}
+
+.testimonial {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  background-color: #fafafa;
+  border-top: 1px solid #ddd;
+}
+
+footer nav a {
+  margin: 0 0.5rem;
+}
