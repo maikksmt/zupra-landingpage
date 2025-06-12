@@ -7,65 +7,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <a href="index.html">Start</a>
-        <a href="styleguide.html">Style Guide</a>
-    </nav>
-    <article>
-        # 🎨 Vibecast Style Guide
-
-Dieser Style Guide definiert zentrale Gestaltungsregeln für die Benutzeroberfläche der Vibecast-App – insbesondere bezogen auf Textstile (`TextTheme`), Farben und Komponentenverhalten.
-
----
-
-## 🧾 Textstile (`Theme.of(context).textTheme`)
-
-Die folgenden Textstile sollen ein konsistentes Erscheinungsbild gewährleisten:
-
-| Zweck                                    | Stil             | Beschreibung                                                  |
-|-----------------------------------------|------------------|---------------------------------------------------------------|
-| **Screen-Titel / Sektionen**            | `titleLarge`     | Hauptüberschriften, z. B. Titel in AppBars oder Abschnitten   |
-| **Standard-Fließtext**                  | `bodyMedium`     | Haupttext für Beiträge, Labels, Meldungen                     |
-| **Sekundäre Informationen**             | `bodySmall`      | Kommentare, Zeitstempel, dezente Hinweise                     |
-| **UI-Beschriftungen / Interaktive Labels** | `labelLarge`     | Text auf Buttons, Tabs, Inputfeldern                          |
-| **Betonte Aussagen / visuelle Anker**   | `bodyLarge`      | Verstärkte Aussagen, Zitate oder visuelle Highlights          |
-
-**Verwendung:**  
-```dart
-Text('Beispieltext', style: Theme.of(context).textTheme.bodyMedium)
-```
-
----
-
-## 🌈 Farbwerte
-
-Die primären Farben im Projekt sind im `vibecastLightTheme` und `vibecastDarkTheme` definiert.
-
-| Name        | Farbwert     | Verwendung               |
-|-------------|--------------|--------------------------|
-| `primary`   | `#6A5AE0`     | Hauptfarbe, Buttons      |
-| `secondary` | `#FF6B6B`     | Akzentfarbe, Icons       |
-| `surface`   | `#F9F9FB` / `#1E1E1E` | Hintergrund/Container |
-
----
-
-## 📐 Komponentenverhalten
-
-- **Buttons:** Einheitlich mit `ElevatedButtonThemeData` gestalten.
-- **Textfelder:** Mit `InputDecorationTheme` für Konsistenz bei Padding und Borders.
-- **Spacing:** Zwischen Elementen `EdgeInsets.symmetric(horizontal: 16)` verwenden.
-
----
-
-## 🧠 Hinweise zur Wartung
-
-- Halte dich in neuen Komponenten an diese Konventionen.
-- Wenn du von einem Stil abweichst, dokumentiere den Grund im Code (`// intentional style override`).
-- Style-Änderungen sollen zuerst hier besprochen & ergänzt werden.
-
----
-
-Letzte Aktualisierung: 2025-06-11
-    </article>
+    <header>
+        <h1>Vibecast – Style Guide</h1>
+        <nav>
+            <a href="index.html">Start</a>
+            <a href="styleguide.html">Style Guide</a>
+        </nav>
+    </header>
+    <main>
+        <p></p><h1>🎨 Vibecast Style Guide</p><p>Dieser Style Guide definiert zentrale Gestaltungsregeln für die Benutzeroberfläche der Vibecast-App – insbesondere bezogen auf Textstile (`TextTheme`">, Farben und Komponentenverhalten.</p><p><hr></p><p>#</p><h1>🧾 Textstile (`Theme.of(context">.textTheme`"></p><p>Die folgenden Textstile sollen ein konsistentes Erscheinungsbild gewährleisten:</p><p>| Zweck                                    | Stil             | Beschreibung                                                  |<br>|<hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>--|<hr><hr><hr><hr><hr><hr>|<hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>|<br>| <b>Screen-Titel / Sektionen<b>            | `titleLarge`     | Hauptüberschriften, z. B. Titel in AppBars oder Abschnitten   |<br>| <b>Standard-Fließtext<b>                  | `bodyMedium`     | Haupttext für Beiträge, Labels, Meldungen                     |<br>| <b>Sekundäre Informationen<b>             | `bodySmall`      | Kommentare, Zeitstempel, dezente Hinweise                     |<br>| <b>UI-Beschriftungen / Interaktive Labels<b> | `labelLarge`     | Text auf Buttons, Tabs, Inputfeldern                          |<br>| <b>Betonte Aussagen / visuelle Anker<b>   | `bodyLarge`      | Verstärkte Aussagen, Zitate oder visuelle Highlights          |</p><p><b>Verwendung:<b>  <br>```dart<br>Text('Beispieltext', style: Theme.of(context">.textTheme.bodyMedium"><br>```</p><p><hr></p><p>#</p><h1>🌈 Farbwerte</p><p>Die primären Farben im Projekt sind im `vibecastLightTheme` und `vibecastDarkTheme` definiert.</p><p>| Name        | Farbwert     | Verwendung               |<br>|<hr><hr><hr><hr>-|<hr><hr><hr><hr>--|<hr><hr><hr><hr><hr><hr><hr><hr>--|<br>| `primary`   | `#6A5AE0`     | Hauptfarbe, Buttons      |<br>| `secondary` | `#FF6B6B`     | Akzentfarbe, Icons       |<br>| `surface`   | `#F9F9FB` / `#1E1E1E` | Hintergrund/Container |</p><p><hr></p><p>#</p><h1>📐 Komponentenverhalten</p><p>- <b>Buttons:<b> Einheitlich mit `ElevatedButtonThemeData` gestalten.<br>- <b>Textfelder:<b> Mit `InputDecorationTheme` für Konsistenz bei Padding und Borders.<br>- <b>Spacing:<b> Zwischen Elementen `EdgeInsets.symmetric(horizontal: 16">` verwenden.</p><p><hr></p><p>#</p><h1>🧠 Hinweise zur Wartung</p><p>- Halte dich in neuen Komponenten an diese Konventionen.<br>- Wenn du von einem Stil abweichst, dokumentiere den Grund im Code (`// intentional style override`">.<br>- Style-Änderungen sollen zuerst hier besprochen & ergänzt werden.</p><p><hr></p><p>Letzte Aktualisierung: 2025-06-11</p>
+    </main>
+    <footer>
+        <p>&copy; 2025 Vibecast</p>
+    </footer>
 </body>
 </html>
