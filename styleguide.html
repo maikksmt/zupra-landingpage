@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibecast – Style Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Start</a>
+        <a href="styleguide.html">Style Guide</a>
+    </nav>
+    <article>
+        # 🎨 Vibecast Style Guide
+
+Dieser Style Guide definiert zentrale Gestaltungsregeln für die Benutzeroberfläche der Vibecast-App – insbesondere bezogen auf Textstile (`TextTheme`), Farben und Komponentenverhalten.
+
+---
+
+## 🧾 Textstile (`Theme.of(context).textTheme`)
+
+Die folgenden Textstile sollen ein konsistentes Erscheinungsbild gewährleisten:
+
+| Zweck                                    | Stil             | Beschreibung                                                  |
+|-----------------------------------------|------------------|---------------------------------------------------------------|
+| **Screen-Titel / Sektionen**            | `titleLarge`     | Hauptüberschriften, z. B. Titel in AppBars oder Abschnitten   |
+| **Standard-Fließtext**                  | `bodyMedium`     | Haupttext für Beiträge, Labels, Meldungen                     |
+| **Sekundäre Informationen**             | `bodySmall`      | Kommentare, Zeitstempel, dezente Hinweise                     |
+| **UI-Beschriftungen / Interaktive Labels** | `labelLarge`     | Text auf Buttons, Tabs, Inputfeldern                          |
+| **Betonte Aussagen / visuelle Anker**   | `bodyLarge`      | Verstärkte Aussagen, Zitate oder visuelle Highlights          |
+
+**Verwendung:**  
+```dart
+Text('Beispieltext', style: Theme.of(context).textTheme.bodyMedium)
+```
+
+---
+
+## 🌈 Farbwerte
+
+Die primären Farben im Projekt sind im `vibecastLightTheme` und `vibecastDarkTheme` definiert.
+
+| Name        | Farbwert     | Verwendung               |
+|-------------|--------------|--------------------------|
+| `primary`   | `#6A5AE0`     | Hauptfarbe, Buttons      |
+| `secondary` | `#FF6B6B`     | Akzentfarbe, Icons       |
+| `surface`   | `#F9F9FB` / `#1E1E1E` | Hintergrund/Container |
+
+---
+
+## 📐 Komponentenverhalten
+
+- **Buttons:** Einheitlich mit `ElevatedButtonThemeData` gestalten.
+- **Textfelder:** Mit `InputDecorationTheme` für Konsistenz bei Padding und Borders.
+- **Spacing:** Zwischen Elementen `EdgeInsets.symmetric(horizontal: 16)` verwenden.
+
+---
+
+## 🧠 Hinweise zur Wartung
+
+- Halte dich in neuen Komponenten an diese Konventionen.
+- Wenn du von einem Stil abweichst, dokumentiere den Grund im Code (`// intentional style override`).
+- Style-Änderungen sollen zuerst hier besprochen & ergänzt werden.
+
+---
+
+Letzte Aktualisierung: 2025-06-11
+    </article>
+</body>
+</html>

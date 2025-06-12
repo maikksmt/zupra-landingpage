@@ -1,86 +1,53 @@
-/* Reset & Grunddesign */
+
 body {
-  margin: 0;
-  font-family: 'Inter', sans-serif;
-  background-color: #fff;
-  color: #111;
-  line-height: 1.6;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fdfdfd;
+    color: #333;
 }
-
 h1, h2, h3 {
-  margin: 0.5em 0;
+    color: #2c3e50;
 }
-
+code, pre {
+    background: #f4f4f4;
+    padding: 4px;
+    border-radius: 4px;
+}
 a {
-  color: #222;
-  text-decoration: none;
+    color: #3498db;
+    text-decoration: none;
 }
-
-header.hero {
-  background: #f8f8f8;
-  padding: 4rem 2rem;
-  text-align: center;
+a:hover {
+    text-decoration: underline;
 }
-
-.hero-content h1 {
-  font-size: 3rem;
+hr {
+    margin: 2em 0;
+    border: 0;
+    border-top: 1px solid #eee;
 }
-
-.cta-form {
-  margin-top: 1.5rem;
+img {
+    max-width: 100%;
+    height: auto;
 }
-
-.cta-form input {
-  padding: 0.8rem;
-  width: 60%;
-  max-width: 300px;
-  margin-right: 0.5rem;
-  border: 1px solid #ccc;
+nav {
+    background-color: #2c3e50;
+    padding: 10px;
+    text-align: center;
 }
-
-.cta-form button {
-  padding: 0.8rem 1.2rem;
-  background-color: #ff9e3d; /* Akzentfarbe */
-  border: none;
-  color: white;
-  cursor: pointer;
+nav a {
+    color: white;
+    margin: 0 15px;
+    font-weight: bold;
 }
-
-section {
-  padding: 3rem 2rem;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.features .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
-}
-
-.how-it-works ol {
-  padding-left: 1.2rem;
-}
-
-.testimonial {
-  background-color: #f0f0f0;
-  text-align: center;
-  padding: 3rem 2rem;
-}
-
-blockquote {
-  font-style: italic;
-  font-size: 1.2rem;
-}
-
-footer {
-  text-align: center;
-  padding: 2rem;
-  font-size: 0.9rem;
-  background-color: #fafafa;
-  border-top: 1px solid #ddd;
-}
-
-footer nav a {
-  margin: 0 0.5rem;
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
 }
