@@ -1,20 +1,31 @@
 
 body {
     font-family: Arial, sans-serif;
+    font-size: 16px;
     line-height: 1.6;
     max-width: 960px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 16px;
     background-color: #fdfdfd;
     color: #333;
 }
-h1, h2, h3 {
-    color: #2c3e50;
+h1 {
+    font-size: 1.8em;
+    margin-top: 1em;
+}
+h2 {
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+h3 {
+    font-size: 1.2em;
+    margin-top: 1em;
 }
 code, pre {
     background: #f4f4f4;
     padding: 4px;
     border-radius: 4px;
+    font-size: 0.9em;
 }
 a {
     color: #3498db;
@@ -41,13 +52,30 @@ nav a {
     color: white;
     margin: 0 15px;
     font-weight: bold;
+    font-size: 1em;
+}
+footer {
+    text-align: center;
+    margin-top: 2em;
+    color: #888;
+    font-size: 0.9em;
 }
 @media (max-width: 600px) {
     body {
         padding: 10px;
+        font-size: 15px;
     }
     nav a {
         display: block;
         margin: 10px 0;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1.3em;
+    }
+    h3 {
+        font-size: 1.1em;
     }
 }
