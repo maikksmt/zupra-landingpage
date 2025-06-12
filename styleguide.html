@@ -1,21 +1,46 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Vibecast – Style Guide</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <header>
-        <h1>Vibecast – Style Guide</h1>
+        <h1>Vibecast Style Guide</h1>
+        <p class="subtitle">Gestaltungsprinzipien für ein authentisches Nutzererlebnis</p>
         <nav>
-            <a href="index.html">Start</a>
+            <a href="index.html">Home</a>
             <a href="styleguide.html">Style Guide</a>
         </nav>
     </header>
     <main>
-        <p></p><h1>🎨 Vibecast Style Guide</p><p>Dieser Style Guide definiert zentrale Gestaltungsregeln für die Benutzeroberfläche der Vibecast-App – insbesondere bezogen auf Textstile (`TextTheme`">, Farben und Komponentenverhalten.</p><p><hr></p><p>#</p><h1>🧾 Textstile (`Theme.of(context">.textTheme`"></p><p>Die folgenden Textstile sollen ein konsistentes Erscheinungsbild gewährleisten:</p><p>| Zweck                                    | Stil             | Beschreibung                                                  |<br>|<hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>--|<hr><hr><hr><hr><hr><hr>|<hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>|<br>| <b>Screen-Titel / Sektionen<b>            | `titleLarge`     | Hauptüberschriften, z. B. Titel in AppBars oder Abschnitten   |<br>| <b>Standard-Fließtext<b>                  | `bodyMedium`     | Haupttext für Beiträge, Labels, Meldungen                     |<br>| <b>Sekundäre Informationen<b>             | `bodySmall`      | Kommentare, Zeitstempel, dezente Hinweise                     |<br>| <b>UI-Beschriftungen / Interaktive Labels<b> | `labelLarge`     | Text auf Buttons, Tabs, Inputfeldern                          |<br>| <b>Betonte Aussagen / visuelle Anker<b>   | `bodyLarge`      | Verstärkte Aussagen, Zitate oder visuelle Highlights          |</p><p><b>Verwendung:<b>  <br>```dart<br>Text('Beispieltext', style: Theme.of(context">.textTheme.bodyMedium"><br>```</p><p><hr></p><p>#</p><h1>🌈 Farbwerte</p><p>Die primären Farben im Projekt sind im `vibecastLightTheme` und `vibecastDarkTheme` definiert.</p><p>| Name        | Farbwert     | Verwendung               |<br>|<hr><hr><hr><hr>-|<hr><hr><hr><hr>--|<hr><hr><hr><hr><hr><hr><hr><hr>--|<br>| `primary`   | `#6A5AE0`     | Hauptfarbe, Buttons      |<br>| `secondary` | `#FF6B6B`     | Akzentfarbe, Icons       |<br>| `surface`   | `#F9F9FB` / `#1E1E1E` | Hintergrund/Container |</p><p><hr></p><p>#</p><h1>📐 Komponentenverhalten</p><p>- <b>Buttons:<b> Einheitlich mit `ElevatedButtonThemeData` gestalten.<br>- <b>Textfelder:<b> Mit `InputDecorationTheme` für Konsistenz bei Padding und Borders.<br>- <b>Spacing:<b> Zwischen Elementen `EdgeInsets.symmetric(horizontal: 16">` verwenden.</p><p><hr></p><p>#</p><h1>🧠 Hinweise zur Wartung</p><p>- Halte dich in neuen Komponenten an diese Konventionen.<br>- Wenn du von einem Stil abweichst, dokumentiere den Grund im Code (`// intentional style override`">.<br>- Style-Änderungen sollen zuerst hier besprochen & ergänzt werden.</p><p><hr></p><p>Letzte Aktualisierung: 2025-06-11</p>
+        <section>
+            <h2>Designphilosophie</h2>
+            <p>Das Erscheinungsbild von Vibecast ist minimalistisch, freundlich und echt. Unser Fokus liegt auf klarer Kommunikation und intuitiver Bedienung.</p>
+        </section>
+        <section>
+            <h2>Farbpalette</h2>
+            <ul>
+                <li><strong>Primärfarbe:</strong> #007acc (Blau – Vertrauen, Nähe)</li>
+                <li><strong>Neutral:</strong> #f2f2f2 und #fafafa (Hintergründe)</li>
+                <li><strong>Akzent:</strong> #eaf6ff (Hervorhebungen)</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Typografie</h2>
+            <p>Verwendet wird die Systemschrift für maximale Performance und Lesbarkeit auf allen Geräten.</p>
+        </section>
+        <section>
+            <h2>Bildsprache</h2>
+            <p>Bilder sollen real, ungefiltert und ortsbezogen sein. Keine inszenierten oder KI-generierten Inhalte.</p>
+        </section>
+        <section>
+            <h2>Interaktion</h2>
+            <p>Buttons und Links sind klar erkennbar und reaktionsschnell. Animationen bleiben dezent und funktional.</p>
+        </section>
     </main>
     <footer>
         <p>&copy; 2025 Vibecast</p>
